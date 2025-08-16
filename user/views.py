@@ -7,7 +7,7 @@ from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status, generics, permissions
 from rest_framework.parsers import MultiPartParser, FormParser
-from foodieland.user.models import User
+from .models import User
 from rest_framework_simplejwt.tokens import RefreshToken
 from .serializers import (
     RegisterSerializer,
